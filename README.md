@@ -2,6 +2,13 @@
 
 Sistema especialista que utiliza inferência Bayesiana (Naive Bayes) para diagnosticar problemas de computador. Desenvolvido como trabalho acadêmico (AT1) de Inteligência Artificial.
 
+Feito por:
+
+Carlos Henrique Fernandes Rodrigues - UC23102765
+Wesley Messias Moreira Brito - UC23102349
+Vinicius Lacerda de Souza - UC23100466
+Isabelle Louzada de Araújo - UC23200269
+
 ## Funcionalidades
 
 - 22 diagnósticos de problemas comuns de computador
