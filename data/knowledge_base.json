@@ -1,0 +1,533 @@
+{
+  "diagnostics": [
+    {
+      "id": "ram_failure",
+      "name": "Falha na Memória RAM",
+      "prior": 0.06,
+      "solutions": [
+        "Remover e reencaixar os pentes de RAM",
+        "Testar cada pente individualmente em slots diferentes",
+        "Executar MemTest86 para diagnóstico detalhado"
+      ]
+    },
+    {
+      "id": "overheating",
+      "name": "Superaquecimento",
+      "prior": 0.07,
+      "solutions": [
+        "Limpar cooler e ventoinhas com ar comprimido",
+        "Trocar pasta térmica do processador",
+        "Verificar se o gabinete tem ventilação adequada"
+      ]
+    },
+    {
+      "id": "hdd_failure",
+      "name": "Falha no HD/SSD",
+      "prior": 0.06,
+      "solutions": [
+        "Executar chkdsk /f /r no prompt de comando",
+        "Verificar saúde do disco com CrystalDiskInfo",
+        "Fazer backup imediato dos dados importantes",
+        "Substituir o disco se houver setores defeituosos"
+      ]
+    },
+    {
+      "id": "psu_failure",
+      "name": "Problema na Fonte de Alimentação",
+      "prior": 0.05,
+      "solutions": [
+        "Testar com outra fonte de alimentação",
+        "Verificar cabos de energia internos",
+        "Medir tensões com multímetro (3.3V, 5V, 12V)"
+      ]
+    },
+    {
+      "id": "motherboard_failure",
+      "name": "Falha na Placa-Mãe",
+      "prior": 0.03,
+      "solutions": [
+        "Verificar LEDs de diagnóstico na placa-mãe",
+        "Testar com o mínimo de componentes (CPU + 1 pente RAM)",
+        "Procurar capacitores estufados visualmente",
+        "Consultar assistência técnica especializada"
+      ]
+    },
+    {
+      "id": "malware",
+      "name": "Vírus/Malware",
+      "prior": 0.08,
+      "solutions": [
+        "Executar verificação completa com antivírus atualizado",
+        "Usar Malwarebytes para segunda opinião",
+        "Verificar programas instalados recentemente",
+        "Iniciar em Modo Seguro e executar scan"
+      ]
+    },
+    {
+      "id": "driver_issue",
+      "name": "Driver Corrompido",
+      "prior": 0.06,
+      "solutions": [
+        "Atualizar drivers pelo Gerenciador de Dispositivos",
+        "Baixar drivers do site oficial do fabricante",
+        "Usar o Verificador de Driver do Windows (verifier.exe)",
+        "Reverter driver atualizado recentemente"
+      ]
+    },
+    {
+      "id": "os_corrupted",
+      "name": "Sistema Operacional Corrompido",
+      "prior": 0.05,
+      "solutions": [
+        "Executar sfc /scannow no prompt elevado",
+        "Executar DISM /Online /Cleanup-Image /RestoreHealth",
+        "Usar Restauração do Sistema para ponto anterior",
+        "Reinstalar o sistema operacional mantendo arquivos"
+      ]
+    },
+    {
+      "id": "disk_full",
+      "name": "Disco Cheio",
+      "prior": 0.06,
+      "solutions": [
+        "Executar Limpeza de Disco do Windows",
+        "Remover programas não utilizados",
+        "Mover arquivos grandes para armazenamento externo",
+        "Esvaziar a Lixeira"
+      ]
+    },
+    {
+      "id": "software_conflict",
+      "name": "Conflito de Software",
+      "prior": 0.05,
+      "solutions": [
+        "Desinstalar software instalado recentemente",
+        "Iniciar em Modo Seguro para isolar o problema",
+        "Verificar programas que iniciam com o Windows (msconfig)",
+        "Atualizar todos os programas para versões mais recentes"
+      ]
+    },
+    {
+      "id": "gpu_failure",
+      "name": "Falha na Placa de Vídeo (GPU)",
+      "prior": 0.04,
+      "solutions": [
+        "Remover e reencaixar a placa de vídeo",
+        "Testar com o vídeo integrado da placa-mãe (se disponível)",
+        "Atualizar drivers da GPU",
+        "Verificar se a ventoinha da GPU está funcionando"
+      ]
+    },
+    {
+      "id": "cooler_issue",
+      "name": "Problema no Cooler/Ventoinha",
+      "prior": 0.04,
+      "solutions": [
+        "Verificar se o cooler do processador está girando",
+        "Limpar poeira acumulada nas ventoinhas",
+        "Substituir ventoinha com ruído ou parada",
+        "Verificar conexão do cabo do cooler na placa-mãe"
+      ]
+    },
+    {
+      "id": "bios_outdated",
+      "name": "BIOS Desatualizada",
+      "prior": 0.03,
+      "solutions": [
+        "Verificar versão atual da BIOS",
+        "Baixar atualização do site do fabricante da placa-mãe",
+        "Seguir procedimento de atualização do fabricante",
+        "Resetar BIOS para configurações padrão (Load Defaults)"
+      ]
+    },
+    {
+      "id": "loose_cable",
+      "name": "Cabo Solto/Danificado",
+      "prior": 0.05,
+      "solutions": [
+        "Verificar todos os cabos internos (SATA, energia, dados)",
+        "Reconectar cabos do painel frontal",
+        "Testar com cabos substitutos",
+        "Verificar cabos externos (monitor, teclado, energia)"
+      ]
+    },
+    {
+      "id": "network_card",
+      "name": "Problema na Placa de Rede",
+      "prior": 0.04,
+      "solutions": [
+        "Atualizar driver da placa de rede",
+        "Executar diagnóstico de rede do Windows",
+        "Resetar configurações TCP/IP (netsh winsock reset)",
+        "Testar com adaptador USB de rede"
+      ]
+    },
+    {
+      "id": "monitor_issue",
+      "name": "Monitor com Defeito",
+      "prior": 0.03,
+      "solutions": [
+        "Testar com outro monitor ou TV",
+        "Verificar cabo de vídeo (HDMI/VGA/DisplayPort)",
+        "Ajustar resolução e taxa de atualização",
+        "Verificar se o monitor liga independentemente"
+      ]
+    },
+    {
+      "id": "peripheral_issue",
+      "name": "Teclado/Mouse com Defeito",
+      "prior": 0.03,
+      "solutions": [
+        "Testar em outra porta USB",
+        "Testar com outro teclado/mouse",
+        "Verificar pilhas se for sem fio",
+        "Atualizar ou reinstalar drivers de entrada"
+      ]
+    },
+    {
+      "id": "partition_corrupted",
+      "name": "Partição Corrompida",
+      "prior": 0.03,
+      "solutions": [
+        "Executar chkdsk na partição afetada",
+        "Usar ferramenta de recuperação de partição",
+        "Verificar tabela de partições com diskpart",
+        "Recuperar dados com software especializado antes de formatar"
+      ]
+    },
+    {
+      "id": "registry_corrupted",
+      "name": "Registro do Windows Corrompido",
+      "prior": 0.04,
+      "solutions": [
+        "Executar sfc /scannow",
+        "Usar Restauração do Sistema",
+        "Executar DISM para reparar imagem do sistema",
+        "Evitar limpadores de registro de terceiros"
+      ]
+    },
+    {
+      "id": "boot_failure",
+      "name": "Problema de Boot/Inicialização",
+      "prior": 0.05,
+      "solutions": [
+        "Verificar ordem de boot na BIOS",
+        "Executar reparo de inicialização pelo pendrive de instalação",
+        "Reconstruir BCD (bootrec /rebuildbcd)",
+        "Verificar se o disco de boot é detectado na BIOS"
+      ]
+    },
+    {
+      "id": "ventilation_failure",
+      "name": "Falha na Ventilação do Gabinete",
+      "prior": 0.03,
+      "solutions": [
+        "Instalar ventoinhas adicionais no gabinete",
+        "Reorganizar cabos internos para melhorar fluxo de ar",
+        "Não obstruir entradas e saídas de ar do gabinete",
+        "Monitorar temperaturas com HWMonitor"
+      ]
+    },
+    {
+      "id": "cmos_battery",
+      "name": "Bateria CMOS Esgotada",
+      "prior": 0.03,
+      "solutions": [
+        "Substituir bateria CR2032 da placa-mãe",
+        "Reconfigurar data/hora e configurações da BIOS após troca",
+        "Verificar se a data do sistema reseta a cada reinício"
+      ]
+    }
+  ],
+  "symptoms": [
+    {
+      "id": "blue_screen",
+      "question": "O computador apresenta tela azul (BSOD)?",
+      "likelihoods": {
+        "ram_failure": 0.85,
+        "overheating": 0.40,
+        "hdd_failure": 0.35,
+        "driver_issue": 0.75,
+        "os_corrupted": 0.50,
+        "gpu_failure": 0.30,
+        "registry_corrupted": 0.25
+      }
+    },
+    {
+      "id": "no_power",
+      "question": "O computador não liga de jeito nenhum (sem LEDs, sem ventoinhas)?",
+      "likelihoods": {
+        "psu_failure": 0.90,
+        "motherboard_failure": 0.60,
+        "loose_cable": 0.50
+      }
+    },
+    {
+      "id": "random_restart",
+      "question": "O computador reinicia sozinho sem aviso?",
+      "likelihoods": {
+        "overheating": 0.80,
+        "ram_failure": 0.55,
+        "psu_failure": 0.60,
+        "os_corrupted": 0.30,
+        "driver_issue": 0.35
+      }
+    },
+    {
+      "id": "extreme_slowness",
+      "question": "O computador está extremamente lento?",
+      "likelihoods": {
+        "malware": 0.80,
+        "disk_full": 0.75,
+        "hdd_failure": 0.50,
+        "ram_failure": 0.40,
+        "software_conflict": 0.45,
+        "overheating": 0.35,
+        "registry_corrupted": 0.30
+      }
+    },
+    {
+      "id": "strange_noises",
+      "question": "O computador faz ruídos estranhos (cliques, rangidos, zumbidos)?",
+      "likelihoods": {
+        "hdd_failure": 0.85,
+        "cooler_issue": 0.75,
+        "ventilation_failure": 0.50,
+        "psu_failure": 0.30
+      }
+    },
+    {
+      "id": "overheating_detected",
+      "question": "O computador esquenta muito ou desliga quando esquenta?",
+      "likelihoods": {
+        "overheating": 0.90,
+        "cooler_issue": 0.80,
+        "ventilation_failure": 0.70,
+        "gpu_failure": 0.30
+      }
+    },
+    {
+      "id": "no_display",
+      "question": "O computador liga mas não aparece imagem no monitor?",
+      "likelihoods": {
+        "gpu_failure": 0.80,
+        "monitor_issue": 0.75,
+        "ram_failure": 0.50,
+        "motherboard_failure": 0.40,
+        "loose_cable": 0.60
+      }
+    },
+    {
+      "id": "boot_errors",
+      "question": "Aparecem mensagens de erro durante a inicialização?",
+      "likelihoods": {
+        "boot_failure": 0.85,
+        "hdd_failure": 0.50,
+        "os_corrupted": 0.65,
+        "bios_outdated": 0.30,
+        "partition_corrupted": 0.55
+      }
+    },
+    {
+      "id": "apps_crashing",
+      "question": "Programas travam ou fecham sozinhos com frequência?",
+      "likelihoods": {
+        "ram_failure": 0.60,
+        "software_conflict": 0.70,
+        "malware": 0.45,
+        "os_corrupted": 0.40,
+        "driver_issue": 0.50,
+        "disk_full": 0.25
+      }
+    },
+    {
+      "id": "no_internet",
+      "question": "O computador não conecta à internet?",
+      "likelihoods": {
+        "network_card": 0.85,
+        "driver_issue": 0.40,
+        "malware": 0.25,
+        "os_corrupted": 0.20
+      }
+    },
+    {
+      "id": "freezing",
+      "question": "O computador congela completamente (trava e não responde)?",
+      "likelihoods": {
+        "ram_failure": 0.65,
+        "overheating": 0.60,
+        "hdd_failure": 0.45,
+        "software_conflict": 0.40,
+        "driver_issue": 0.45,
+        "gpu_failure": 0.35
+      }
+    },
+    {
+      "id": "slow_boot",
+      "question": "O computador demora muito para iniciar?",
+      "likelihoods": {
+        "hdd_failure": 0.55,
+        "disk_full": 0.60,
+        "malware": 0.50,
+        "software_conflict": 0.45,
+        "os_corrupted": 0.40,
+        "boot_failure": 0.35
+      }
+    },
+    {
+      "id": "unexpected_popups",
+      "question": "Aparecem pop-ups ou janelas inesperadas?",
+      "likelihoods": {
+        "malware": 0.90,
+        "software_conflict": 0.25
+      }
+    },
+    {
+      "id": "file_corruption",
+      "question": "Arquivos estão corrompidos ou desaparecendo?",
+      "likelihoods": {
+        "hdd_failure": 0.80,
+        "malware": 0.55,
+        "partition_corrupted": 0.70,
+        "ram_failure": 0.25
+      }
+    },
+    {
+      "id": "beep_codes",
+      "question": "O computador emite bips ao ligar?",
+      "likelihoods": {
+        "ram_failure": 0.80,
+        "gpu_failure": 0.50,
+        "motherboard_failure": 0.55,
+        "loose_cable": 0.30
+      }
+    },
+    {
+      "id": "usb_not_working",
+      "question": "Portas USB não estão funcionando?",
+      "likelihoods": {
+        "motherboard_failure": 0.35,
+        "driver_issue": 0.55,
+        "os_corrupted": 0.25,
+        "peripheral_issue": 0.40
+      }
+    },
+    {
+      "id": "graphics_artifacts",
+      "question": "Aparecem artefatos gráficos (linhas, quadrados coloridos) na tela?",
+      "likelihoods": {
+        "gpu_failure": 0.90,
+        "overheating": 0.35,
+        "monitor_issue": 0.30,
+        "driver_issue": 0.40
+      }
+    },
+    {
+      "id": "date_resets",
+      "question": "A data e hora do computador resetam sozinhas?",
+      "likelihoods": {
+        "cmos_battery": 0.95,
+        "bios_outdated": 0.20
+      }
+    },
+    {
+      "id": "keyboard_mouse_fail",
+      "question": "Teclado ou mouse não respondem?",
+      "likelihoods": {
+        "peripheral_issue": 0.85,
+        "driver_issue": 0.30,
+        "motherboard_failure": 0.20,
+        "os_corrupted": 0.15
+      }
+    },
+    {
+      "id": "high_cpu_usage",
+      "question": "O uso de CPU está constantemente alto (mesmo sem programas abertos)?",
+      "likelihoods": {
+        "malware": 0.85,
+        "software_conflict": 0.50,
+        "driver_issue": 0.30,
+        "os_corrupted": 0.25
+      }
+    },
+    {
+      "id": "disk_noise_constant",
+      "question": "O disco rígido fica trabalhando sem parar?",
+      "likelihoods": {
+        "malware": 0.55,
+        "hdd_failure": 0.50,
+        "disk_full": 0.40,
+        "os_corrupted": 0.30,
+        "software_conflict": 0.25
+      }
+    },
+    {
+      "id": "power_fluctuation",
+      "question": "O computador desliga ao conectar/desconectar periféricos?",
+      "likelihoods": {
+        "psu_failure": 0.75,
+        "motherboard_failure": 0.40,
+        "loose_cable": 0.35
+      }
+    },
+    {
+      "id": "bios_settings_lost",
+      "question": "Configurações da BIOS são perdidas após desligar?",
+      "likelihoods": {
+        "cmos_battery": 0.90,
+        "motherboard_failure": 0.25,
+        "bios_outdated": 0.30
+      }
+    },
+    {
+      "id": "wifi_drops",
+      "question": "A conexão Wi-Fi cai frequentemente?",
+      "likelihoods": {
+        "network_card": 0.75,
+        "driver_issue": 0.50,
+        "overheating": 0.15
+      }
+    },
+    {
+      "id": "screen_flickering",
+      "question": "A tela fica piscando ou tremendo?",
+      "likelihoods": {
+        "gpu_failure": 0.60,
+        "monitor_issue": 0.70,
+        "driver_issue": 0.45,
+        "loose_cable": 0.50
+      }
+    },
+    {
+      "id": "os_not_found",
+      "question": "Aparece mensagem 'Sistema operacional não encontrado'?",
+      "likelihoods": {
+        "boot_failure": 0.90,
+        "hdd_failure": 0.65,
+        "partition_corrupted": 0.60,
+        "loose_cable": 0.35,
+        "bios_outdated": 0.20
+      }
+    },
+    {
+      "id": "random_shutdowns",
+      "question": "O computador desliga sozinho (sem reiniciar)?",
+      "likelihoods": {
+        "overheating": 0.80,
+        "psu_failure": 0.70,
+        "motherboard_failure": 0.30,
+        "cooler_issue": 0.50
+      }
+    },
+    {
+      "id": "new_software_installed",
+      "question": "O problema começou após instalar algum programa novo?",
+      "likelihoods": {
+        "software_conflict": 0.85,
+        "driver_issue": 0.50,
+        "malware": 0.45,
+        "registry_corrupted": 0.35
+      }
+    }
+  ]
+}
